@@ -1,0 +1,985 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Stars & Merit — Construction Company in NCR</title>
+    <meta name="description" content="Stars & Merit is the leading construction company in NCR. We offer residential, commercial, and industrial construction services in Delhi, Noida, Gurgaon, Faridabad & Ghaziabad." />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/js/css/style.css">
+
+  
+</head>
+
+<body>
+
+    <!-- ===== PRELOADER ===== -->
+    <div class="preloader-z" id="preloader">
+        <div class="preloader-bar"><div class="preloader-fill"></div></div>
+        <div class="preloader-text">Stars &amp; Merit Construction</div>
+    </div>
+
+    <!-- ===== TOAST ===== -->
+    <div class="toast-z" id="toast">
+        <div class="t-icon"><i class="bi bi-check-lg"></i></div>
+        <p>Thank you! We'll contact you within 2 hours.</p>
+    </div>
+
+    <!-- ============================================
+    PREMIUM NAVBAR
+    ============================================ -->
+    <nav class="navbar navbar-expand-lg navbar-premium fixed-top" id="mainNav">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="brand-premium" href="#">
+                <img class="bg-danger" width="80" height="auto" style="border-radius: 50%;"  src="https://scontent.fdel3-4.fna.fbcdn.net/v/t39.30808-1/449838146_992726649526326_8837922176229237678_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s200x200&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=td2cpW08HhAQ7kNvwE-j-oR&_nc_oc=AdrlgJRb4XzCC8cI1scxjy3WZ6DBiGg_CTP2iGtlaeBU7Ar3b1X_c3D5nX3mLii-Cdn7tMhgb1tUe_HLfJ3wpkn-&_nc_zt=24&_nc_ht=scontent.fdel3-4.fna&_nc_gid=L-3yLGUMGkoojltxiYrkmQ&_nc_ss=78289&oh=00_AQEAnWp3V6EXfM-7WkNBkLP2jAaDVbJb2QcGg3BFasGS7w&oe=6A7123C4" alt="">
+                <span class="brand-text">
+                    Stars <span class="highlight">&amp;</span> Merit
+                </span>
+            </a>
+
+            <!-- Animated Hamburger -->
+            <button class="hamburger-premium" id="hamburgerBtn" type="button" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Collapsible -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-premium active" href="index.html">
+                            <i class="bi bi-house-fill"></i> Home
+                        </a>
+                    </li>
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-premium active" href="about.html">
+                            <i class="bi bi-info-circle"></i> About
+                        </a>
+                    </li>
+
+                    <!-- Dropdown: Services (hover) -->
+                    <li class="nav-item dropdown-premium">
+                        <a class="nav-link nav-link-premium" href="#" id="servicesDropdown" role="button">
+                            <i class="bi bi-grid-3x3-gap-fill"></i> Services
+                            <span class="dropdown-arrow"><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu-premium" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-house-door"></i> Residential</a></li>
+                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-building"></i> Commercial</a></li>
+                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-gear-wide-connected"></i> Industrial</a></li>
+                            <li class="dropdown-divider-premium"></li>
+                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-tools"></i> Renovation</a></li>
+                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-palette2"></i> Interior Design</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Project -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-premium active" href="project.html">
+                            <i class="bi bi-briefcase"></i> Project
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-premium" href="contact.html">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- CTA -->
+                <a href="contact.html" class="btn-cta-nav">
+                    <i class="bi bi-arrow-right-circle"></i> Get Free Quote
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero-z" id="hero">
+        <div class="hero-bg-slider" id="heroSlider">
+            <div class="hero-bg-slide active" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDvx-M1YNe0cP5Gl4EkAdDoJnsD93wvAOHKzC6K2TWODgaeRuApG53NwiA&s=10')"></div>
+            <div class="hero-bg-slide" style="background-image:url('https://i.pinimg.com/736x/94/41/f2/9441f2efd20b16f02e73b25b43181a8c.jpg')"></div>
+            <div class="hero-bg-slide" style="background-image:url('https://png.pngtree.com/thumb_back/fh260/background/20230618/pngtree-residential-building-under-construction-3d-rendering-with-excavator-and-crane-image_3630005.jpg')"></div>
+        </div>
+        <div class="container hero-z-content">
+            <div class="row">
+                <div class="col-lg-8 col-xl-7">
+                    <div class="hero-z-tag anim-up"><i class="bi bi-geo-alt-fill"></i> Serving Entire NCR Region</div>
+                    <h1 class="hero-z-title anim-up">
+                        Best Construction Company in <span class="highlight">NCR</span> — Delhi, Noida, Gurgaon &amp; Beyond
+                    </h1>
+                    <p class="hero-z-desc anim-up">
+                        Stars &amp; Merit delivers premium residential, commercial, and industrial construction services across NCR. From foundation to finishing — we build with precision, transparency, and trust.
+                    </p>
+                    <div class="hero-z-btns anim-up">
+                        <a href="#contact" class="btn-z-primary">Get Free Estimate <i class="bi bi-arrow-right"></i></a>
+                        <a href="#projects" class="btn-z-outline"><i class="bi bi-play-circle"></i> View Projects</a>
+                    </div>
+                    <div class="hero-trust anim-up">
+                        <div class="hero-trust-item">
+                            <h3><span class="counter" data-target="500">0</span>+</h3>
+                            <p>Projects Done</p>
+                        </div>
+                        <div class="hero-trust-divider"></div>
+                        <div class="hero-trust-item">
+                            <h3><span class="counter" data-target="20">0</span>+</h3>
+                            <p>Years in NCR</p>
+                        </div>
+                        <div class="hero-trust-divider"></div>
+                        <div class="hero-trust-item">
+                            <h3><span class="counter" data-target="5">0</span></h3>
+                            <p>NCR Cities</p>
+                        </div>
+                        <div class="hero-trust-divider"></div>
+                        <div class="hero-trust-item">
+                            <h3><span class="counter" data-target="4.9">0</span>★</h3>
+                            <p>Google Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slider-dots">
+            <button class="h-s-dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="h-s-dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="h-s-dot" data-slide="2" aria-label="Slide 3"></button>
+        </div>
+    </section>
+
+    <!-- ===== TRUST BAR ===== -->
+    <div class="trust-bar">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <p class="mb-0">Trusted by leading brands</p>
+                <div class="trust-logos">
+                    <span>DOMINO'S</span><span>SLOAN</span><span>TRENDS</span><span>Supertech</span><span>PANTALOONS</span><span>Jaypee</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== STARS & MERIT (image + text section) ===== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <!-- Left: 2x2 Image Grid -->
+                <div class="col-lg-6">
+                    <div class="row g-3 stars-merit-grid">
+                        <div class="col-6">
+                            <div class="img-card h-100">
+                                <img src="https://wallpaperaccess.com/full/3434349.jpg" alt="Excavation" loading="lazy" />
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="img-card h-100">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQes__jEHRiPLgGdvei64BJ9BRs3t2gmx3q6RV0FxiTLg&s=10" alt="Construction" loading="lazy" />
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="img-card h-100">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDxC1c7I9msi0su3nRBzP2PXT8OuUozn8fw2MN__iJM9yPiluZcJZ37sQ&s=10" alt="Heavy machinery" loading="lazy" />
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="img-card h-100">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/022/667/155/small/construction-concept-at-back-of-the-construction-worker-head-which-is-wearing-the-safety-helmet-and-checking-work-at-the-construction-site-non-existent-person-generative-ai-photo.jpg" alt="Team" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right: Text -->
+                <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                        <h1 class="display-4 fw-bold">Stars <span class="text-brand-green">&amp;</span> Merit</h1>
+                        <p class="text-muted" style="font-size:clamp(1rem,1.4vw,1.25rem);">Your Trusted Partner in Commercial &amp; Residential Excavation</p>
+                        <p class="lead text-muted" style="font-size:clamp(0.85rem,1.05vw,1.05rem);line-height:1.8;">
+                            With over 40 years of experience, Stars &amp; Merit Construction Inc stands as a leading name in the construction industry, offering expert services in excavation, demolition, and hauling. As a family-owned and operated business, we are dedicated to delivering exceptional craftsmanship and personalized service to every client. Our commitment to quality and attention to detail ensures that each project, whether large or small, is handled with the utmost precision and care. From clearing the ground for new foundations to safely dismantling outdated structures and efficiently transporting materials, our experienced team is equipped to meet your needs with professionalism and expertise. At Stars &amp; Merit, we take pride in our work, and our reputation for excellence is built on a legacy of reliability and customer satisfaction. Our long-standing reputation is built on a foundation of trust, reliability, and a personal touch that only a family-run business can provide. We work closely with our clients throughout the entire process, from initial consultation to project completion, ensuring open communication and transparency at every stage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICE AREAS ===== -->
+    <section class="service-areas" id="areas">
+        <div class="container">
+            <div class="text-center mb-4 anim-up">
+                <span class="sec-label">Our Service Areas</span>
+                <h2 class="sec-title">Construction Services Across NCR</h2>
+                <p class="sec-desc mx-auto">We operate in all major NCR cities, delivering world-class construction with local expertise and regulatory knowledge.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="city-card">
+                        <div class="city-card-img">
+                            <img src="https://scontent.fdel3-4.fna.fbcdn.net/v/t39.30808-6/474491570_1148080980657558_5659717779871135493_n.jpg?stp=dst-jpg_tt6&cstp=mx960x585&ctp=s960x585&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zpXaVsm6FxcQ7kNvwG54GF0&_nc_oc=Adpn3tUrK11vPRSh_SXK6yBVLVrG8PGL3edAl6BPGXFStsBFvm8QaRDlvaEAgs-nRaMsk_KUtX2_0n5izUIBgcCC&_nc_zt=23&_nc_ht=scontent.fdel3-4.fna&_nc_gid=c1EjiaKsLZolnhjiPrNWqA&_nc_ss=7b289&oh=00_AQA9XfNvMg-otW8HEmsSeATjQWbny8p68P_9T7jAaNH01g&oe=6A6F348D" alt="Delhi" loading="lazy">
+                            <span class="city-badge">Popular</span>
+                        </div>
+                        <div class="city-card-body">
+                            <h4>Construction in Delhi</h4>
+                            <p>Complete construction solutions in New Delhi, South Delhi, West Delhi, and surrounding areas with MCD/NDMC approvals.</p>
+                            <div class="city-projects-count"><i class="bi bi-building"></i> 120+ Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="city-card">
+                        <div class="city-card-img">
+                            <img src="https://scontent.fdel3-4.fna.fbcdn.net/v/t39.30808-6/473618681_1146916560774000_492693666462823012_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x1280&ctp=s1280x1280&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=w5z2VuqNNO4Q7kNvwHN7TCQ&_nc_oc=AdoqJ_oFAomCZ9IWyIJGO6tfpvE1-sUxNjEZblLF4ueXyRAn-dJn45FgKGJ8ydSbk7V2hY-tz9AzDwajZRX3mC5W&_nc_zt=23&_nc_ht=scontent.fdel3-4.fna&_nc_gid=95nE2YS0SdHHOVJC8IPI5Q&_nc_ss=7b289&oh=00_AQCOLSVMC-2Qof28nsxOmeknotnZQEfAIQ_SaIVbBkyTCw&oe=6A6F2FB9" alt="Noida" loading="lazy">
+                            <span class="city-badge">Trending</span>
+                        </div>
+                        <div class="city-card-body">
+                            <h4>Construction in Noida</h4>
+                            <p>Residential &amp; commercial construction in Noida, Greater Noida, and Noida Extension with Authority-approved plans.</p>
+                            <div class="city-projects-count"><i class="bi bi-building"></i> 95+ Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="city-card">
+                        <div class="city-card-img">
+                            <img src="https://scontent.fdel3-5.fna.fbcdn.net/v/t1.6435-9/119391463_371820924209031_6972653202153713849_n.jpg?stp=dst-jpg_tt6&cstp=mx960x640&ctp=s960x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LzigiKXr-Z0Q7kNvwFmYlm1&_nc_oc=Adoiqygsothfp_lxx4Yf3uvFbZQMx6n4PiYDbLr27WQqwc_rLk1HPaWw1nGwKLYi8Na5NkCsO-Y3HEp7y76CJTsh&_nc_zt=23&_nc_ht=scontent.fdel3-5.fna&_nc_gid=W5VPyHnTj_A0EsbpK5XFJQ&_nc_ss=7b289&oh=00_AQBpC3nR7J1OSZBowfHyGbAaCQWSfHC3O7AyMHzhKx05Qg&oe=6A90E36C" alt="Gurgaon" loading="lazy">
+                            <span class="city-badge">Trending</span>
+                        </div>
+                        <div class="city-card-body">
+                            <h4>Construction in Gurgaon</h4>
+                            <p>Premium construction services in Gurgaon, Sohna Road, Golf Course Road with HUDA/DTCP compliance.</p>
+                            <div class="city-projects-count"><i class="bi bi-building"></i> 110+ Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="city-card">
+                        <div class="city-card-img">
+                            <img src="https://scontent.fdel3-5.fna.fbcdn.net/v/t1.6435-9/119795677_371820707542386_7451544772071308777_n.jpg?stp=dst-jpg_tt6&cstp=mx960x640&ctp=s960x640&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mw_cwUkjBgwQ7kNvwGwfbZ5&_nc_oc=Adr3cxxhC-kr6CYH-UscnR-9sfM5uGPFlk4LNPKY_nqRicnCnYFq-wbZBqyMw2VTMzcmcbNNlNxAgEmBBE-bo4xz&_nc_zt=23&_nc_ht=scontent.fdel3-5.fna&_nc_gid=6CH90WIr0Iu2VRychJoQyQ&_nc_ss=7b289&oh=00_AQC9F4_NarDU3zJRfvZkiqE2qdVzPPXYAwrtW-ufh8RnkQ&oe=6A90C969" alt="Faridabad" loading="lazy">
+                            <span class="city-badge">Trending</span>
+                        </div>
+                        <div class="city-card-body">
+                            <h4>Construction in Faridabad</h4>
+                            <p>Affordable yet quality construction in Faridabad, Neharpar, and Greater Faridabad with municipal approvals.</p>
+                            <div class="city-projects-count"><i class="bi bi-building"></i> 80+ Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="city-card">
+                        <div class="city-card-img">
+                            <img src="https://www.epack.in/wp-content/uploads/2023/04/e.webp" alt="Ghaziabad" loading="lazy">
+                            <span class="city-badge">Trending</span>
+                        </div>
+                        <div class="city-card-body">
+                            <h4>Construction in Ghaziabad</h4>
+                            <p>Full-scope construction in Ghaziabad, Vaishali, Indirapuram, and Crossings Republik with GDA approvals.</p>
+                            <div class="city-projects-count"><i class="bi bi-building"></i> 65+ Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="city-card">
+                        <div class="city-card-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREVLKJ2WbLTKZL6jeYWNiXcZg8JE46IKoNCwtSUPdmxVDaoZIcENqO-bo&s=10" alt="Greater Noida" loading="lazy">
+                            <span class="city-badge">Trending</span>
+                        </div>
+                        <div class="city-card-body">
+                            <h4>Construction in Greater Noida</h4>
+                            <p>Modern construction in Greater Noida West, Knowledge Park with GNIDA-approved building plans and maps.</p>
+                            <div class="city-projects-count"><i class="bi bi-building"></i> 55+ Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONSTRUCTION TYPES ===== -->
+    <section class="const-types" id="types">
+        <div class="container">
+            <div class="text-center mb-4 anim-up">
+                <span class="sec-label">Our Services</span>
+                <h2 class="sec-title">Construction Types We Specialize In</h2>
+                <p class="sec-desc mx-auto">From independent floors to high-rise towers — we handle every type of construction project in NCR.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="type-card">
+                        <div class="type-icon"><i class="bi bi-house-door"></i></div>
+                        <h4>Residential Construction</h4>
+                        <p>Independent houses, builder floors, farmhouses, villas, and apartment complexes with premium finishes and smart layouts.</p>
+                        <a href="#contact" class="type-link">Get Quote <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="type-card">
+                        <div class="type-icon"><i class="bi bi-building"></i></div>
+                        <h4>Commercial Construction</h4>
+                        <p>Office spaces, retail outlets, showrooms, hotels, and mixed-use buildings designed for business success.</p>
+                        <a href="#contact" class="type-link">Get Quote <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="type-card">
+                        <div class="type-icon"><i class="bi bi-gear-wide-connected"></i></div>
+                        <h4>Industrial Construction</h4>
+                        <p>Factories, warehouses, cold storages, and industrial sheds built for operational efficiency and durability.</p>
+                        <a href="#contact" class="type-link">Get Quote <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="type-card">
+                        <div class="type-icon"><i class="bi bi-tools"></i></div>
+                        <h4>Renovation &amp; Extension</h4>
+                        <p>Complete home renovation, floor addition, structural modification, and interior overhaul services across NCR.</p>
+                        <a href="#contact" class="type-link">Get Quote <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="type-card">
+                        <div class="type-icon"><i class="bi bi-palette2"></i></div>
+                        <h4>Interior &amp; Fit-Out</h4>
+                        <p>Turnkey interior solutions for homes, offices, and retail spaces with modular kitchens, wardrobes, and more.</p>
+                        <a href="#contact" class="type-link">Get Quote <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="type-card">
+                        <div class="type-icon"><i class="bi bi-clipboard-check"></i></div>
+                        <h4>Architectural Planning</h4>
+                        <p>Architectural design, structural engineering, 3D visualization, and building plan approval assistance.</p>
+                        <a href="#contact" class="type-link">Get Quote <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TWO QUALITIES ===== -->
+    <section class="const-types" id="types">
+        <div class="container">
+            <div class="text-center mb-4 anim-up">
+                <span class="sec-label">Our Services</span>
+                <h2 class="sec-title">Construction Types We Specialize In</h2>
+                <p class="sec-desc mx-auto">From independent floors to high‑rise towers — we handle every type of construction project in NCR.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="type-card h-100 d-flex flex-column justify-content-center text-center" style="background:#1a2a3a;color:#fff;border-radius:16px;padding:clamp(1.5rem,2.5vw,2.5rem) clamp(1rem,2vw,1.5rem);box-shadow:0 8px 30px rgba(0,0,0,0.08);">
+                        <div class="type-icon" style="font-size:clamp(2.5rem,3.2vw,3.2rem);color:#00A896;margin-bottom:1rem;">
+                            <i class="bi bi-award-fill"></i>
+                        </div>
+                        <h3 class="fw-bold" style="color:#ffffff;font-size:clamp(1.2rem,1.6vw,1.6rem);">Two Important Qualities About Us</h3>
+                        <p style="color:rgba(255,255,255,0.8);font-size:clamp(0.85rem,0.95vw,0.95rem);margin-top:0.5rem;">
+                            We don't just build structures — we build trust. Our core values drive everything we do.
+                        </p>
+                        <div class="mt-3">
+                            <span class="badge" style="background:#00A896;padding:0.4rem 1.2rem;font-size:clamp(0.75rem,0.9vw,0.9rem);border-radius:50px;">
+                                <i class="bi bi-arrow-right me-1"></i> Our Promise
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="type-card h-100" style="background:#ffffff;border-radius:16px;padding:clamp(1.2rem,2vw,2rem) clamp(1rem,1.8vw,1.5rem);box-shadow:0 4px 20px rgba(0,0,0,0.06);border-bottom:4px solid #00A896;transition:transform 0.3s ease;">
+                        <div class="type-icon" style="font-size:clamp(2.2rem,2.8vw,2.8rem);color:#00A896;margin-bottom:1rem;">
+                            <i class="bi bi-check-circle-fill"></i>
+                        </div>
+                        <h4 class="fw-bold" style="color:#1a2a3a;font-size:clamp(1.1rem,1.4vw,1.4rem);">Quality Projects</h4>
+                        <p style="color:#555;font-size:clamp(0.85rem,0.95vw,0.95rem);line-height:1.6;">
+                            We deliver top‑notch excavation using the best materials and skilled craftsmanship, ensuring beauty and durability.
+                        </p>
+                        <a href="#contact" class="type-link" style="color:#00A896;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;">
+                            Get Quote <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 anim-up">
+                    <div class="type-card h-100" style="background:#ffffff;border-radius:16px;padding:clamp(1.2rem,2vw,2rem) clamp(1rem,1.8vw,1.5rem);box-shadow:0 4px 20px rgba(0,0,0,0.06);border-bottom:4px solid #00A896;transition:transform 0.3s ease;">
+                        <div class="type-icon" style="font-size:clamp(2.2rem,2.8vw,2.8rem);color:#00A896;margin-bottom:1rem;">
+                            <i class="bi bi-emoji-smile-fill"></i>
+                        </div>
+                        <h4 class="fw-bold" style="color:#1a2a3a;font-size:clamp(1.1rem,1.4vw,1.4rem);">Customer Satisfaction</h4>
+                        <p style="color:#555;font-size:clamp(0.85rem,0.95vw,0.95rem);line-height:1.6;">
+                            We prioritize clear communication and personalized service to ensure you're thrilled with the final results.
+                        </p>
+                        <a href="#contact" class="type-link" style="color:#00A896;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;">
+                            Get Quote <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="why-us" id="whyus">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-5 anim-left">
+                    <span class="sec-label">Why Stars &amp; Merit</span>
+                    <h2 class="sec-title">Why NCR Trusts Us for Construction</h2>
+                    <p class="sec-desc">We're not just builders — we're your construction partners. Here's what sets us apart from hundreds of contractors in NCR.</p>
+                    <a href="#contact" class="btn-z-primary mt-3" style="font-size:clamp(0.75rem,0.85vw,0.85rem);padding:clamp(10px,1.2vw,14px) clamp(18px,2vw,30px);">Talk to Our Expert <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="col-lg-7 anim-right">
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <div class="why-feature">
+                                <div class="why-icon"><i class="bi bi-cash-stack"></i></div>
+                                <div>
+                                    <h5>Transparent Pricing</h5>
+                                    <p>No hidden costs. Detailed BOQ provided before work starts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-feature">
+                                <div class="why-icon"><i class="bi bi-calendar-check"></i></div>
+                                <div>
+                                    <h5>On-Time Delivery</h5>
+                                    <p>92% projects completed on or before committed timeline.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-feature">
+                                <div class="why-icon"><i class="bi bi-shield-check"></i></div>
+                                <div>
+                                    <h5>RERA Compliant</h5>
+                                    <p>All projects comply with RERA, MCD, Noida Authority norms.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-feature">
+                                <div class="why-icon"><i class="bi bi-camera-video"></i></div>
+                                <div>
+                                    <h5>Live Progress Tracking</h5>
+                                    <p>Daily photo/video updates via our client portal.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-feature">
+                                <div class="why-icon"><i class="bi bi-award"></i></div>
+                                <div>
+                                    <h5>15+ Years Experience</h5>
+                                    <p>Deep NCR market knowledge with proven track record.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-feature">
+                                <div class="why-icon"><i class="bi bi-headset"></i></div>
+                                <div>
+                                    <h5>Dedicated Project Manager</h5>
+                                    <p>Single point of contact for your entire project.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SLIDER ===== -->
+    <section class="projects-sec" id="projects">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4 anim-up">
+                <div>
+                    <span class="sec-label">Our Portfolio</span>
+                    <h2 class="sec-title">Featured NCR Projects</h2>
+                    <p class="sec-desc">A glimpse of our recent construction projects across Delhi-NCR.</p>
+                </div>
+                <div class="proj-nav">
+                    <button class="proj-nav-btn" id="projPrev" aria-label="Previous"><i class="bi bi-arrow-left"></i></button>
+                    <button class="proj-nav-btn" id="projNext" aria-label="Next"><i class="bi bi-arrow-right"></i></button>
+                    <div class="proj-dots" id="projDots"></div>
+                </div>
+            </div>
+        </div>
+        <div class="proj-track-wrap" id="projWrap">
+            <div class="proj-track" id="projTrack">
+                <div class="proj-card">
+                    <div class="proj-card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMCqkIYsqUn8kfKmUMvM27x0WKKhdBISbxLxeHXCirbWckjdal_8HxnoI&s=10" alt="Project" loading="lazy"><span class="proj-card-badge">Residential</span></div>
+                    <div class="proj-card-body">
+                        <div class="proj-card-loc"><i class="bi bi-geo-alt-fill"></i> Sector 52, Gurgaon</div>
+                        <h4>Luxury 4BHK Villa — 4,200 sq.ft</h4>
+                        <p>Modern villa with Italian marble, smart home system, private pool, and landscaped garden.</p>
+                        <div class="proj-card-feats"><span class="proj-feat"><i class="bi bi-arrows-fullscreen"></i> 4,200 sq.ft</span><span class="proj-feat"><i class="bi bi-calendar3"></i> 8 Months</span><span class="proj-feat"><i class="bi bi-currency-rupee"></i> ₹1.8 Cr</span></div>
+                        <div class="proj-card-foot">
+                            <div class="proj-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><span>5.0</span></div>
+                            <button class="proj-btn">Details <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-card-img"><img src="https://img.magnific.com/free-photo/empty-room-with-chairs-desks_23-2149008873.jpg?semt=ais_hybrid&w=740&q=80" alt="Project" loading="lazy"><span class="proj-card-badge">Commercial</span></div>
+                    <div class="proj-card-body">
+                        <div class="proj-card-loc"><i class="bi bi-geo-alt-fill"></i> Sector 62, Noida</div>
+                        <h4>Corporate Office — 12,000 sq.ft</h4>
+                        <p>State-of-the-art office space with open floor plan, meeting pods, and premium fit-out.</p>
+                        <div class="proj-card-feats"><span class="proj-feat"><i class="bi bi-arrows-fullscreen"></i> 12,000 sq.ft</span><span class="proj-feat"><i class="bi bi-calendar3"></i> 6 Months</span><span class="proj-feat"><i class="bi bi-currency-rupee"></i> ₹2.4 Cr</span></div>
+                        <div class="proj-card-foot">
+                            <div class="proj-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><span>4.9</span></div>
+                            <button class="proj-btn">Details <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPjnswPHtRtZFcSJMrGJA5NfItAZTjaK8gGbzjGA_nHYZSznFcPZy0j7M&s=10" alt="Project" loading="lazy"><span class="proj-card-badge">Builder Floor</span></div>
+                    <div class="proj-card-body">
+                        <div class="proj-card-loc"><i class="bi bi-geo-alt-fill"></i> Dwarka, Delhi</div>
+                        <h4>3BHK Builder Floor — 1,800 sq.ft</h4>
+                        <p>Stylish builder floor with modular kitchen, wardrobes, and premium bathroom fittings.</p>
+                        <div class="proj-card-feats"><span class="proj-feat"><i class="bi bi-arrows-fullscreen"></i> 1,800 sq.ft</span><span class="proj-feat"><i class="bi bi-calendar3"></i> 5 Months</span><span class="proj-feat"><i class="bi bi-currency-rupee"></i> ₹55 L</span></div>
+                        <div class="proj-card-foot">
+                            <div class="proj-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span>4.8</span></div>
+                            <button class="proj-btn">Details <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-card-img"><img src="https://media.gettyimages.com/id/2258456793/photo/dominos-pizza-take-away-shop-on-28th-january-2026-in-shrewsbury-united-kingdom-shrewsbury-is.jpg?s=612x612&w=gi&k=20&c=hK_qS7y7DL7KayHqAcxT4eqGroGVBFmje-1gA9kHPVA=" alt="Project" loading="lazy"><span class="proj-card-badge">Industrial</span></div>
+                    <div class="proj-card-body">
+                        <div class="proj-card-loc"><i class="bi bi-geo-alt-fill"></i> Surajpur, Greater Noida</div>
+                        <h4>Industrial Warehouse — 20,000 sq.ft</h4>
+                        <p>Heavy-duty warehouse with loading docks, fire safety systems, and office block.</p>
+                        <div class="proj-card-feats"><span class="proj-feat"><i class="bi bi-arrows-fullscreen"></i> 20,000 sq.ft</span><span class="proj-feat"><i class="bi bi-calendar3"></i> 4 Months</span><span class="proj-feat"><i class="bi bi-currency-rupee"></i> ₹1.2 Cr</span></div>
+                        <div class="proj-card-foot">
+                            <div class="proj-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><span>5.0</span></div>
+                            <button class="proj-btn">Details <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-card-img"><img src="https://flatsdekho.in/assets/uploads/1777958528farmhouse-05.jpg" alt="Project" loading="lazy"><span class="proj-card-badge">Farmhouse</span></div>
+                    <div class="proj-card-body">
+                        <div class="proj-card-loc"><i class="bi bi-geo-alt-fill"></i> Chattarpur, Delhi</div>
+                        <h4>Luxury Farmhouse — 8,000 sq.ft</h4>
+                        <p>Grand farmhouse with swimming pool, party lawn, servant quarters, and modern amenities.</p>
+                        <div class="proj-card-feats"><span class="proj-feat"><i class="bi bi-arrows-fullscreen"></i> 8,000 sq.ft</span><span class="proj-feat"><i class="bi bi-calendar3"></i> 10 Months</span><span class="proj-feat"><i class="bi bi-currency-rupee"></i> ₹3.5 Cr</span></div>
+                        <div class="proj-card-foot">
+                            <div class="proj-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><span>4.9</span></div>
+                            <button class="proj-btn">Details <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-card-img"><img src="https://picsum.photos/seed/zp6/600/375.jpg" alt="Project" loading="lazy"><span class="proj-card-badge">Renovation</span></div>
+                    <div class="proj-card-body">
+                        <div class="proj-card-loc"><i class="bi bi-geo-alt-fill"></i> Sector 15, Faridabad</div>
+                        <h4>Complete Home Renovation — 2,400 sq.ft</h4>
+                        <p>Full renovation including structural changes, new wiring, plumbing, and modern interiors.</p>
+                        <div class="proj-card-feats"><span class="proj-feat"><i class="bi bi-arrows-fullscreen"></i> 2,400 sq.ft</span><span class="proj-feat"><i class="bi bi-calendar3"></i> 3 Months</span><span class="proj-feat"><i class="bi bi-currency-rupee"></i> ₹35 L</span></div>
+                        <div class="proj-card-foot">
+                            <div class="proj-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span>4.7</span></div>
+                            <button class="proj-btn">Details <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-z">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-6 col-lg-3 anim-up">
+                    <div class="stat-z-item">
+                        <div class="stat-z-num"><span class="counter" data-target="200">0</span>+</div>
+                        <div class="stat-z-label">Projects Completed</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 anim-up">
+                    <div class="stat-z-item">
+                        <div class="stat-z-num"><span class="counter" data-target="15">0</span>+</div>
+                        <div class="stat-z-label">Years in NCR</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 anim-up">
+                    <div class="stat-z-item">
+                        <div class="stat-z-num"><span class="counter" data-target="5">0</span></div>
+                        <div class="stat-z-label">NCR Cities</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 anim-up">
+                    <div class="stat-z-item">
+                        <div class="stat-z-num"><span class="counter" data-target="98">0</span>%</div>
+                        <div class="stat-z-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="process-z" id="process">
+        <div class="container">
+            <div class="text-center mb-4 anim-up">
+                <span class="sec-label">How It Works</span>
+                <h2 class="sec-title">Our Simple 4-Step Process</h2>
+                <p class="sec-desc mx-auto">From your first call to project handover — a smooth, transparent journey.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 anim-up">
+                    <div class="proc-card">
+                        <div class="proc-num text-danger">01</div>
+                        <div class="proc-icon"><i class="bi bi-telephone"></i></div>
+                        <h4>Free Consultation</h4>
+                        <p>Call us or fill the form. We'll understand your requirements, budget, and timeline.</p>
+                        <span class="proc-arrow"><i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 anim-up">
+                    <div class="proc-card">
+                        <div class="proc-num text-danger">02</div>
+                        <div class="proc-icon"><i class="bi bi-rulers"></i></div>
+                        <h4>Design &amp; Estimation</h4>
+                        <p>Get detailed floor plans, 3D designs, and a transparent cost estimate — no hidden charges.</p>
+                        <span class="proc-arrow"><i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 anim-up">
+                    <div class="proc-card">
+                        <div class="proc-num text-danger">03</div>
+                        <div class="proc-icon"><i class="bi bi-hammer"></i></div>
+                        <h4>Construction</h4>
+                        <p>Our expert team starts building with quality materials, regular updates, and strict supervision.</p>
+                        <span class="proc-arrow"><i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 anim-up">
+                    <div class="proc-card">
+                        <div class="proc-num text-danger">04</div>
+                        <div class="proc-icon"><i class="bi bi-key"></i></div>
+                        <h4>Handover</h4>
+                        <p>Final quality check, documentation, and keys in your hand — your dream is now reality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testi-z" id="testimonials">
+        <div class="container">
+            <div class="text-center mb-4 anim-up">
+                <span class="sec-label">Client Reviews</span>
+                <h2 class="sec-title">What NCR Homeowners Say About Us</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 anim-up">
+                    <div class="testi-card">
+                        <div class="testi-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testi-text">"Stars &amp; Merit built our 4BHK in Gurgaon Sector 49. The quality of finish is outstanding — Italian marble, modular kitchen, everything was perfect. Highly recommend!"</p>
+                        <div class="testi-author"><img src="https://picsum.photos/seed/zrev1/100/100.jpg" alt="Client" loading="lazy">
+                            <div>
+                                <h6>MUZEEB AHMED</h6><span>Homeowner, Gurgaon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 anim-up">
+                    <div class="testi-card">
+                        <div class="testi-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testi-text">"We got our builder floor renovated in Dwarka. The team was professional, completed work in 3 months, and the pricing was very transparent. No surprises!"</p>
+                        <div class="testi-author"><img src="https://picsum.photos/seed/zrev2/100/100.jpg" alt="Client" loading="lazy">
+                            <div>
+                                <h6>MUZEEB AHMED</h6><span>Homeowner, Delhi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 anim-up">
+                    <div class="testi-card">
+                        <div class="testi-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+                        <p class="testi-text">"Stars &amp; Merit constructed our warehouse in Greater Noida. Great project management, daily updates on WhatsApp, and delivered before deadline. Excellent work!"</p>
+                        <div class="testi-author"><img src="https://picsum.photos/seed/zrev3/100/100.jpg" alt="Client" loading="lazy">
+                            <div>
+                                <h6>MUZEEB AHMED</h6><span>Business Owner, Noida</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq-z" id="faq">
+        <div class="container">
+            <div class="row align-items-start g-4">
+                <div class="col-lg-5 anim-left">
+                    <span class="sec-label">FAQs</span>
+                    <h2 class="sec-title">Frequently Asked Questions About Construction in NCR</h2>
+                    <p class="sec-desc mb-4">Can't find your answer? Call us directly or fill the contact form — we respond within 2 hours.</p>
+                    <a href="tel:+919876543210" class="btn-z-primary" style="font-size:clamp(0.75rem,0.85vw,0.85rem);padding:clamp(10px,1.2vw,14px) clamp(18px,2vw,30px);"><i class="bi bi-telephone"></i> +91 98765 43210</a>
+                </div>
+                <div class="col-lg-7 anim-right">
+                    <div class="faq-item active">
+                        <button class="faq-q">What is the per sq.ft construction cost in NCR? <i class="bi bi-plus-lg"></i></button>
+                        <div class="faq-a">
+                            <div class="faq-a-inner">Construction cost in NCR ranges from ₹1,400–₹1,800 per sq.ft for standard construction, ₹1,800–₹2,500 for premium, and ₹2,500–₹4,000+ for luxury. The exact cost depends on location, specifications, and finishes you choose.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">Do you handle building plan approvals? <i class="bi bi-plus-lg"></i></button>
+                        <div class="faq-a">
+                            <div class="faq-a-inner">Yes! We handle complete architectural planning and building plan approvals from MCD (Delhi), Noida Authority, HUDA/GMDA (Gurgaon), GDA (Ghaziabad), and Faridabad Municipal Corporation. Our team manages the entire approval process.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">How long does it take to build a house in NCR? <i class="bi bi-plus-lg"></i></button>
+                        <div class="faq-a">
+                            <div class="faq-a-inner">Typically, a 3BHK (1,500–2,000 sq.ft) takes 5–7 months, a 4BHK villa takes 8–12 months, and commercial projects vary based on scale. We provide a detailed timeline at the start and stick to it.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">Do you provide material and labour both? <i class="bi bi-plus-lg"></i></button>
+                        <div class="faq-a">
+                            <div class="faq-a-inner">Yes, we offer both labour contract and material+labour (turnkey) contracts. In turnkey contracts, we source all materials from verified brands, handle logistics, and manage everything — you just monitor progress.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">Can I track my construction progress? <i class="bi bi-plus-lg"></i></button>
+                        <div class="faq-a">
+                            <div class="faq-a-inner">Absolutely! We provide daily photo/video updates via WhatsApp and a dedicated client portal where you can track milestones, payments, and see real-time progress. You'll also have a dedicated project manager as your single point of contact.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">What is the payment schedule? <i class="bi bi-plus-lg"></i></button>
+                        <div class="faq-a">
+                            <div class="faq-a-inner">We follow a milestone-based payment plan: typically 15–20% at start, then payments at each construction stage (foundation, structure, brickwork, plastering, finishing). This is mutually agreed upon before work begins — no surprise demands.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-z">
+        <div class="cta-z-bg"></div>
+        <div class="container">
+            <div class="cta-z-content anim-up">
+                <span class="sec-label" style="color:var(--accent-light);justify-content:center;">Ready to Build?</span>
+                <h2 class="sec-title">Get Your Free Construction Estimate Today</h2>
+                <p class="sec-desc mx-auto">Tell us about your project and get a detailed cost estimate within 24 hours — no obligation, no pressure.</p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="#contact" class="btn-z-primary">Get Free Estimate <i class="bi bi-arrow-right"></i></a>
+                    <a href="tel:+9193467559" class="btn-z-outline"><i class="bi bi-telephone"></i> Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact-z" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5 anim-left">
+                    <span class="sec-label">Contact Us</span>
+                    <h2 class="sec-title">Let's Start Building Your Dream Project</h2>
+                    <p class="sec-desc mb-4">Fill the form or reach us directly — our NCR construction experts are ready to help.</p>
+
+                    <!-- Quick Action Buttons (WhatsApp & Call) added here -->
+                    <div class="quick-action-btns">
+                        <a href="https://wa.me/9193467559?text=Hi%20Stars%20%26%20Merit%2C%20I%20want%20to%20know%20about%20construction%20services%20in%20NCR." target="_blank" class="qa-btn whatsapp">
+                            <i class="bi bi-whatsapp"></i> WhatsApp Us
+                        </a>
+                        <a href="tel:+9193467559" class="qa-btn call">
+                            <i class="bi bi-telephone-fill"></i> Call Now
+                        </a>
+                    </div>
+
+                    <div class="contact-info-z mt-4">
+                        <div class="ci-icon bg-success text-light"><i class="bi bi-geo-alt"></i></div>
+                        <div>
+                            <h6 class="text-dark">Office Address</h6>
+                            <p class="text-dark">First Floor, Centrum Plaza Mall, 107, 16B, Mehrauli-Gurgaon Rd, opposite Metro Pillar, Sultanpur,<br />New Delhi, Delhi 122009</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-z">
+                        <div class="ci-icon bg-danger text-light"><i class="bi bi-telephone"></i></div>
+                        <div>
+                            <h6 class="text-dark">Phone / WhatsApp</h6>
+                            <p class="text-dark">093132 67201<br />093132 67201</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-z">
+                        <div class="ci-icon bg-success text-light"><i class="bi bi-envelope"></i></div>
+                        <div>
+                            <h6 class="text-dark">Email</h6>
+                            <p class="text-dark">hello@starsandmerit.com<br />quotes@starsandmerit.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-z">
+                        <div class="ci-icon bg-info text-light"><i class="bi bi-clock"></i></div>
+                        <div>
+                            <h6 class="text-dark">Working Hours</h6>
+                            <p class="text-dark">Mon – Sat: 9 AM – 7 PM<br />Sunday: By Appointment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 anim-right">
+                    <div class="contact-form-z">
+                        <h4 class="text-light" style="font-size:clamp(1.1rem,1.3vw,1.25rem);font-weight:800;margin-bottom:4px;">Get Your Free Estimate</h4>
+                        <p class="text-light" style="font-size:clamp(0.75rem,0.85vw,0.85rem);color:rgba(255,255,255,0.7);margin-bottom:20px;">We'll respond with a detailed cost estimate within 24 hours.</p>
+                        <form class="form-z" id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6"><label>Full Name *</label><input type="text" class="form-control" placeholder="Your name" required /></div>
+                                <div class="col-md-6"><label>Phone Number *</label><input type="tel" class="form-control" placeholder="+91 XXXXX XXXXX" required /></div>
+                                <div class="col-md-6"><label>Email</label><input type="email" class="form-control" placeholder="your@email.com" /></div>
+                                <div class="col-md-6"><label>City in NCR *</label>
+                                    <select class="form-select form-control" required>
+                                        <option value="" disabled selected>Select city</option>
+                                        <option>Delhi</option>
+                                        <option>Noida</option>
+                                        <option>Greater Noida</option>
+                                        <option>Gurgaon</option>
+                                        <option>Faridabad</option>
+                                        <option>Ghaziabad</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6"><label>Construction Type *</label>
+                                    <select class="form-select form-control" required>
+                                        <option value="" disabled selected>Select type</option>
+                                        <option>Residential (New)</option>
+                                        <option>Builder Floor</option>
+                                        <option>Commercial</option>
+                                        <option>Industrial</option>
+                                        <option>Renovation</option>
+                                        <option>Interior/Fit-Out</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6"><label>Approx. Area (sq.ft)</label><input type="text" class="form-control" placeholder="e.g. 2000" /></div>
+                                <div class="col-12"><label>Tell Us About Your Project *</label><textarea class="form-control" rows="4" placeholder="Describe your requirements, budget range, timeline..." required></textarea></div>
+                                <div class="col-12"><button type="submit" class="btn-z-primary w-100 justify-content-center" style="border-radius:10px;padding:clamp(12px,1.5vw,16px);">Submit &amp; Get Free Estimate <i class="bi bi-send"></i></button></div>
+                                <p style="font-size:clamp(0.65rem,0.7vw,0.72rem);color:rgba(255,255,255,0.5);margin:0;text-align:center;"><i class="bi bi-shield-lock" style="color:var(--accent);"></i> Your information is 100% secure and will never be shared.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer-z">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-brand-z" href="#">
+                        <div class="fb-z">S M</div>Stars &amp; Merit
+                    </a>
+                    <p class="footer-desc-z">NCR's most trusted construction company. Building homes, offices, and dreams since 2009 with transparency, quality, and commitment.</p>
+                    <div class="footer-social-z">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6>NCR Cities</h6>
+                    <ul class="footer-links-z">
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Noida</a></li>
+                        <li><a href="#">Greater Noida</a></li>
+                        <li><a href="#">Gurgaon</a></li>
+                        <li><a href="#">Faridabad</a></li>
+                        <li><a href="#">Ghaziabad</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6>Services</h6>
+                    <ul class="footer-links-z">
+                        <li><a href="#">Residential</a></li>
+                        <li><a href="#">Commercial</a></li>
+                        <li><a href="#">Industrial</a></li>
+                        <li><a href="#">Renovation</a></li>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Plan Approval</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6>Company</h6>
+                    <ul class="footer-links-z">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6>Resources</h6>
+                    <ul class="footer-links-z">
+                        <li><a href="#">Cost Calculator</a></li>
+                        <li><a href="#">Floor Plans</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-z">
+                <marquee behavior="" direction="right">
+                    <p>© 2025 Stars &amp; Merit Construction Pvt. Ltd. All rights reserved.</p>
+                </marquee>
+                <marquee behavior="" direction="left">
+                    <p>Made with <a href="#">❤</a> in NCR</p>
+                </marquee>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="btt" id="btt" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+
+    <!-- ===== FLOATING WHATSAPP & CALL BUTTONS ===== -->
+    <div class="float-btn-group">
+        <a href="https://wa.me/91934675591?text=Hi%20Stars%20%26%20Merit%2C%20I%20want%20to%20know%20about%20construction%20services%20in%20NCR." target="_blank" class="float-btn whatsapp" aria-label="Chat on WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+            <span class="tooltip-text">WhatsApp</span>
+        </a>
+        <a href="tel:+9193467559" class="float-btn call bg-danger" aria-label="Call now">
+            <i class="bi bi-telephone-fill"></i>
+            <span class="tooltip-text">Call Us</span>
+        </a>
+    </div>
+
+    
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

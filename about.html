@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>About Us — Stars & Merit Construction Company in NCR</title>
+    <meta name="description" content="Learn about Stars & Merit — NCR's trusted construction company with 15+ years of experience in residential, commercial, and industrial projects." />
+<link rel="stylesheet" href="js/css/style.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <style>
+        /* ===== ROOT VARIABLES ===== */
+        :root {
+            --primary: #0a1f44;
+            --primary-light: #1a3a6a;
+            --accent: #00A896;
+            --accent-light: #5ce0c4;
+            --text-dark: #1a1a2e;
+            --text-light: #6b7280;
+            --bg-light: #f8fafc;
+            --shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            --radius: 16px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            font-family: 'Inter', 'DM Sans', sans-serif;
+            color: var(--text-dark);
+            background: #ffffff;
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100%;
+        }
+ 
+      
+        
+        /* ============================================
+           ABOUT HERO
+        ============================================ */
+        .about-hero {
+            position: relative;
+            padding: clamp(120px, 16vh, 160px) 0 clamp(50px, 6vh, 80px);
+            background: var(--primary);
+            overflow: hidden;
+        }
+        .about-hero-bg {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 70% 30%, rgba(0, 168, 150, 0.15) 0%, transparent 60%),
+                radial-gradient(circle at 20% 80%, rgba(10, 31, 68, 0.4) 0%, transparent 50%);
+        }
+        .about-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        .about-hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.10);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            padding: 6px 16px;
+            border-radius: 50px;
+            color: var(--accent-light);
+            font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+            font-weight: 500;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .about-hero h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+            margin-bottom: 16px;
+        }
+        .about-hero h1 .highlight {
+            color: var(--accent);
+        }
+        .about-hero p {
+            font-size: clamp(0.95rem, 1.3vw, 1.2rem);
+            color: rgba(255, 255, 255, 0.75);
+            max-width: 640px;
+            line-height: 1.7;
+        }
+
+        /* ============================================
+           SECTION LABELS
+        ============================================ */
+        .sec-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0, 168, 150, 0.10);
+            color: var(--accent);
+            padding: 4px 14px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: clamp(0.65rem, 0.8vw, 0.8rem);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .sec-title {
+            font-size: clamp(1.5rem, 3.2vw, 2.8rem);
+            font-weight: 800;
+            color: var(--text-dark);
+            line-height: 1.2;
+            letter-spacing: -0.3px;
+        }
+        .sec-title.white {
+            color: #fff;
+        }
+        .sec-desc {
+            font-size: clamp(0.85rem, 1.1vw, 1.1rem);
+            color: var(--text-light);
+            max-width: 640px;
+            line-height: 1.7;
+        }
+        .sec-desc.white {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        /* ============================================
+           OUR STORY / MISSION
+        ============================================ */
+        .story-section {
+            padding: clamp(40px, 6vh, 70px) 0;
+            background: #ffffff;
+        }
+        .story-img {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        .story-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            min-height: 280px;
+            transition: transform 0.5s ease;
+        }
+        .story-img:hover img {
+            transform: scale(1.02);
+        }
+        .mission-card {
+            background: var(--bg-light);
+            border-radius: var(--radius);
+            padding: clamp(20px, 2.5vw, 30px);
+            border-left: 4px solid var(--accent);
+            transition: var(--transition);
+            height: 100%;
+        }
+        .mission-card:hover {
+            transform: translateX(6px);
+            box-shadow: var(--shadow);
+        }
+        .mission-card .icon {
+            font-size: clamp(2rem, 2.8vw, 2.8rem);
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        .mission-card h4 {
+            font-weight: 700;
+            font-size: clamp(1rem, 1.2vw, 1.2rem);
+            margin-bottom: 4px;
+        }
+        .mission-card p {
+            color: var(--text-light);
+            font-size: clamp(0.85rem, 0.95vw, 0.95rem);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* ============================================
+           TIMELINE
+        ============================================ */
+        .timeline-section {
+            padding: clamp(40px, 6vh, 70px) 0;
+            background: var(--bg-light);
+        }
+        .timeline-item {
+            display: flex;
+            gap: 20px;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+        .timeline-year {
+            font-weight: 800;
+            font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+            color: var(--accent);
+            min-width: 80px;
+            flex-shrink: 0;
+        }
+        .timeline-content h5 {
+            font-weight: 700;
+            font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+            margin-bottom: 2px;
+        }
+        .timeline-content p {
+            color: var(--text-light);
+            font-size: clamp(0.8rem, 0.9vw, 0.9rem);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* ============================================
+           VALUES
+        ============================================ */
+        .values-section {
+            padding: clamp(40px, 6vh, 70px) 0;
+            background: #ffffff;
+        }
+        .value-card {
+            text-align: center;
+            padding: clamp(20px, 2.5vw, 30px) clamp(16px, 2vw, 22px);
+            border-radius: var(--radius);
+            background: var(--bg-light);
+            transition: var(--transition);
+            height: 100%;
+            border-bottom: 4px solid transparent;
+        }
+        .value-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow);
+            border-bottom-color: var(--accent);
+        }
+        .value-card .icon {
+            font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .value-card h4 {
+            font-weight: 700;
+            font-size: clamp(1rem, 1.2vw, 1.15rem);
+            margin-bottom: 6px;
+        }
+        .value-card p {
+            color: var(--text-light);
+            font-size: clamp(0.8rem, 0.9vw, 0.9rem);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ============================================
+           TEAM
+        ============================================ */
+        .team-section {
+            padding: clamp(40px, 6vh, 70px) 0;
+            background: var(--bg-light);
+        }
+        .team-card {
+            background: #fff;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+            text-align: center;
+        }
+        .team-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+        }
+        .team-card-img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+            background: #eef2f7;
+        }
+        .team-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        .team-card:hover .team-card-img img {
+            transform: scale(1.05);
+        }
+        .team-card-body {
+            padding: clamp(16px, 2vw, 24px);
+        }
+        .team-card-body h5 {
+            font-weight: 700;
+            font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+            margin-bottom: 2px;
+        }
+        .team-card-body .role {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: clamp(0.75rem, 0.85vw, 0.85rem);
+            margin-bottom: 6px;
+        }
+        .team-card-body p {
+            color: var(--text-light);
+            font-size: clamp(0.75rem, 0.85vw, 0.85rem);
+            line-height: 1.6;
+            margin: 0;
+        }
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .team-social a {
+            width: clamp(30px, 3vw, 34px);
+            height: clamp(30px, 3vw, 34px);
+            border-radius: 50%;
+            background: var(--bg-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            transition: var(--transition);
+            font-size: clamp(0.7rem, 0.8vw, 0.8rem);
+        }
+        .team-social a:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* ============================================
+           CTA
+        ============================================ */
+        .cta-z {
+            padding: clamp(40px, 6vh, 70px) 0;
+            position: relative;
+            background: var(--primary);
+            overflow: hidden;
+        }
+        .cta-z-bg {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(0, 168, 150, 0.15) 0%, transparent 60%);
+        }
+        .cta-z-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+        }
+        .cta-z-content .sec-title {
+            color: #fff;
+        }
+        .cta-z-content .sec-desc {
+            color: rgba(255, 255, 255, 0.75);
+        }
+        .btn-z-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent);
+            color: #fff;
+            padding: clamp(10px, 1.5vw, 14px) clamp(20px, 2.5vw, 32px);
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: clamp(0.8rem, 1vw, 0.95rem);
+            border: none;
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            justify-content: center;
+        }
+        .btn-z-primary:hover {
+            background: #028b7a;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 168, 150, 0.35);
+        }
+        .btn-z-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            color: #fff;
+            padding: clamp(10px, 1.5vw, 14px) clamp(18px, 2vw, 28px);
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: clamp(0.8rem, 1vw, 0.95rem);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            justify-content: center;
+        }
+        .btn-z-outline:hover {
+            background: rgba(255, 255, 255, 0.10);
+            border-color: #fff;
+            color: #fff;
+        }
+        .cta-z-content .btn-z-primary {
+            background: #fff;
+            color: var(--primary);
+        }
+        .cta-z-content .btn-z-primary:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+        .cta-z-content .btn-z-outline {
+            border-color: rgba(255, 255, 255, 0.30);
+            color: #fff;
+        }
+        .cta-z-content .btn-z-outline:hover {
+            background: rgba(255, 255, 255, 0.10);
+            border-color: #fff;
+        }
+
+        /* ============================================
+           FOOTER
+        ============================================ */
+        .footer-z {
+            background: var(--primary);
+            color: rgba(255, 255, 255, 0.70);
+            padding: clamp(30px, 5vh, 60px) 0 20px;
+        }
+        .footer-brand-z {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            font-size: clamp(1.2rem, 2vw, 1.6rem);
+            color: #fff;
+            letter-spacing: -0.5px;
+        }
+        .footer-brand-z .fb-z {
+            width: clamp(36px, 4vw, 44px);
+            height: clamp(36px, 4vw, 44px);
+            background: var(--accent);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+        }
+        .footer-desc-z {
+            font-size: clamp(0.8rem, 0.9vw, 0.9rem);
+            line-height: 1.7;
+            margin: 14px 0 18px;
+            max-width: 360px;
+        }
+        .footer-social-z {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .footer-social-z a {
+            width: clamp(34px, 3.5vw, 40px);
+            height: clamp(34px, 3.5vw, 40px);
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.60);
+            transition: var(--transition);
+            font-size: clamp(0.8rem, 0.9vw, 0.9rem);
+        }
+        .footer-social-z a:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+        .footer-z h6 {
+            color: #fff;
+            font-weight: 700;
+            font-size: clamp(0.8rem, 0.9vw, 0.9rem);
+            margin-bottom: 12px;
+            letter-spacing: 0.3px;
+        }
+        .footer-links-z {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-links-z li {
+            margin-bottom: 6px;
+        }
+        .footer-links-z a {
+            color: rgba(255, 255, 255, 0.60);
+            font-size: clamp(0.75rem, 0.85vw, 0.85rem);
+            transition: var(--transition);
+        }
+        .footer-links-z a:hover {
+            color: var(--accent);
+            padding-left: 4px;
+        }
+        .footer-bottom-z {
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding-top: 16px;
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            font-size: clamp(0.7rem, 0.8vw, 0.8rem);
+            opacity: 0.6;
+        }
+        .footer-bottom-z a {
+            color: var(--accent);
+        }
+
+        /* ============================================
+           BACK TO TOP
+        ============================================ */
+        .btt {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            z-index: 99;
+            width: clamp(40px, 4.5vw, 48px);
+            height: clamp(40px, 4.5vw, 48px);
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            font-size: clamp(1rem, 1.2vw, 1.3rem);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(0, 168, 150, 0.30);
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+        .btt.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .btt:hover {
+            background: #028b7a;
+            transform: translateY(-3px);
+        }
+
+        /* ============================================
+           ANIMATION HELPERS
+        ============================================ */
+        .anim-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: animUp 0.7s ease forwards;
+        }
+        @keyframes animUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .anim-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            animation: animLeft 0.7s ease forwards;
+        }
+        @keyframes animLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .anim-right {
+            opacity: 0;
+            transform: translateX(30px);
+            animation: animRight 0.7s ease forwards;
+        }
+        @keyframes animRight {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* ============================================
+           RESPONSIVE
+        ============================================ */
+        @media (max-width: 992px) {
+            .about-hero {
+                padding: 100px 0 50px;
+            }
+        }
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 1.8rem;
+            }
+            .timeline-item {
+                flex-direction: column;
+                gap: 4px;
+                padding: 12px 0;
+            }
+            .timeline-year {
+                min-width: auto;
+            }
+            .brand-premium .brand-tagline {
+                display: none;
+            }
+            .brand-premium {
+                font-size: 1.1rem;
+                gap: 8px;
+            }
+            .brand-premium .brand-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 0.9rem;
+                border-radius: 10px;
+            }
+            .hamburger-premium {
+                width: 38px;
+                height: 38px;
+                padding: 8px;
+            }
+            .hamburger-premium .bar {
+                width: 20px;
+                height: 2px;
+            }
+            .footer-z h6 {
+                margin-top: 12px;
+            }
+            .footer-bottom-z {
+                flex-direction: column;
+                text-align: center;
+            }
+            .cta-z-content .btn-z-primary,
+            .cta-z-content .btn-z-outline {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        @media (max-width: 576px) {
+            .about-hero h1 {
+                font-size: 1.5rem;
+            }
+            .sec-title {
+                font-size: 1.4rem;
+            }
+            .brand-premium {
+                font-size: 0.95rem;
+                gap: 6px;
+            }
+            .brand-premium .brand-icon {
+                width: 32px;
+                height: 32px;
+                font-size: 0.75rem;
+                border-radius: 8px;
+            }
+            .navbar-premium .container {
+                padding: 0 12px;
+            }
+            .navbar-premium .navbar-collapse {
+                padding: 12px 16px 20px;
+            }
+            .team-card-img {
+                aspect-ratio: 1/1;
+            }
+            .mission-card {
+                padding: 16px;
+            }
+        }
+        @media (max-width: 400px) {
+            .brand-premium {
+                font-size: 0.85rem;
+            }
+            .brand-premium .brand-icon {
+                width: 28px;
+                height: 28px;
+                font-size: 0.65rem;
+            }
+            .hamburger-premium {
+                width: 34px;
+                height: 34px;
+                padding: 6px;
+            }
+            .hamburger-premium .bar {
+                width: 18px;
+                height: 2px;
+            }
+        }
+
+        /* fix container row margins */
+        .container,
+        .container-fluid {
+            max-width: 100%;
+        }
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .row>* {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        .g-4 {
+            --bs-gutter-x: 1.5rem;
+        }
+        .g-3 {
+            --bs-gutter-x: 1rem;
+        }
+        .g-2 {
+            --bs-gutter-x: 0.5rem;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ===== PRELOADER ===== -->
+    <div class="preloader-z" id="preloader">
+        <div class="preloader-bar"><div class="preloader-fill"></div></div>
+        <div class="preloader-text">Stars &amp; Merit — About Us</div>
+    </div>
+
+    <!-- ============================================
+    PREMIUM NAVBAR
+    ============================================ -->
+    <nav class="navbar navbar-expand-lg navbar-premium fixed-top" id="mainNav">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="brand-premium" href="#">
+                <span class="brand-icon">S M</span>
+                <span class="brand-text">
+                    Stars <span class="highlight">&amp;</span> Merit
+                    <span class="brand-tagline">Construction</span>
+                </span>
+            </a>
+
+            <!-- Animated Hamburger -->
+            <button class="hamburger-premium" id="hamburgerBtn" type="button" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Collapsible -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-premium" href="index.html">
+                            <i class="bi bi-house-fill"></i> Home
+                        </a>
+                    </li>
+                    <!-- About -->
+                    <li class="nav-item">
+    <a class="nav-link nav-link-premium active" href="about.html">
+        <i class="bi bi-info-circle"></i> About
+    </a>
+</li>
+
+                    <!-- Services -->
+                    <li class="nav-item dropdown-premium">
+                        <a class="nav-link nav-link-premium" href="#" id="servicesDropdown" role="button">
+                            <i class="bi bi-grid-3x3-gap-fill"></i> Services
+                            <span class="dropdown-arrow"><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu-premium" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-house-door"></i> Residential</a></li>
+                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-building"></i> Commercial</a></li>
+                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-gear-wide-connected"></i> Industrial</a></li>
+                            <li class="dropdown-divider-premium"></li>
+                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-tools"></i> Renovation</a></li>
+                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-palette2"></i> Interior Design</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Projects -->
+                    <li class="nav-item">
+    <a class="nav-link nav-link-premium active" href="project.html">
+        <i class="bi bi-briefcase"></i> Project
+    </a>
+</li>
+                 
+                 
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+    <a class="nav-link nav-link-premium" href="contact.html">
+        <i class="bi bi-envelope"></i> Contact
+    </a>
+</li>
+
+                </ul>
+
+                <!-- CTA -->
+                <a href="contact.html" class="btn-cta-nav">
+                    <i class="bi bi-arrow-right-circle"></i> Get Free Quote
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ============================================
+    ABOUT HERO
+    ============================================ -->
+  <section class="about-hero">
+    <div class="hero-bg-slide" style="background-image:url('https://www.contractingontario.ca/wp-content/uploads/bfi_thumb/Building-Construction-r0yh5wn2zr1s9vyef1ioa42vxahhz6jdv1l3towl5o.jpg')" ></div>
+    <div class="container">
+        <div class="text-center">
+                <div class="about-hero-tag px-3 py-2" style="font-size: 20px; background: white; color: black;">
+                <i class="bi bi-buildings"></i> About Stars &amp; Merit</div>
+        </div>
+    </div>
+</section>
+
+  
+    <!-- ============================================
+    OUR STORY + MISSION / VISION
+    ============================================ -->
+    <section class="py-5 bg-light">
+        <div class="container-fluid">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                <div class="row g-0" style="height: auto;">
+                    <!-- Right - Content -->
+                    <div class="col-lg-6">
+                        <div class="p-4 p-md-5">
+                            <div class="small text-uppercase fw-bold text-warning mb-2" style="letter-spacing: 2px;">
+                                <i class="fas fa-quote-left me-2"></i> Discover our story
+                            </div>
+                            <h2 class="display-6 fw-bold mb-2" style="font-family: 'Playfair Display', serif; color: #1a3a5c;">About Stars & Merit Construction </h2>
+                            <div class="bg-warning rounded-3 mb-4" style="width: 50px; height: 3px;"></div>
+
+                            <p class="text-muted" style="line-height: 1.9;">
+                            Welcome to Stars & Merit Construction inc, a family-owned and operated company with over 25 years of experience in the construction industry. For four decades, we have been dedicated to providing top-notch services in excavation, demolition, and hauling, making us a trusted name in the industry. Our longevity is a testament to our unwavering commitment to quality, integrity, and customer satisfaction.
+                            </p>
+
+                            <div class="bg-light p-3 p-md-4 rounded-3 border-start border-warning border-4 my-3">
+                                <p class="mb-0 text-dark fw-medium" style="line-height: 1.8;">
+                                    <i class="fas fa-quote-left text-warning me-2"></i>
+                                    Welcome to Domino Construction inc, a family-owned and operated company with over 32 years of experience in the construction industry. For four decades, we have been dedicated to providing top-notch services in excavation, demolition, and hauling, making us a trusted name in the industry. Our longevity is a testament to our unwavering commitment to quality, integrity, and customer satisfaction.       As a family-run business, we pride ourselves on offering a personal touch that sets us apart from larger, impersonal firms. Our team, consisting of skilled professionals and family members, ensures that each project receives the meticulous attention to detail and care it deserves. From the initial consultation to project completion, we work closely with our clients to understand their unique needs and deliver results that exceed expectations.
+                                </p>
+                            </div>
+
+                            <p class="text-muted" style="line-height: 1.9;">
+                               Our comprehensive services include precise excavation for foundations and grading, safe and efficient demolition of outdated structures, and reliable hauling of materials for various construction projects. Equipped with advanced machinery and a wealth of industry knowledge, we handle each task with expertise and efficiency, ensuring that every job is completed on time and within budget. At Domino Construction, our legacy of excellence is built on a foundation of hard work, trust, and a dedication to our craft, making us the ideal partner for your next proj
+                            </p>   
+                            </div>         
+                    </div><!-- Left - Image -->
+                    <div class="col-lg-6 position-relative">
+                        <img src="https://content.app-sources.com/s/318381333321670411/uploads/Images/1000015443-5636712.jpg?format=webp" class="w-100 h-100 object-fit-cover" alt="Managing Director" style="min-height: 400px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+   
+    <!-- ============================================
+    CORE VALUES
+    ============================================ -->
+  <!-- ============================================
+    DEMOLITION PROCESS & WHY CHOOSE US
+    ============================================ -->
+<section class="values-section">
+    <div class="container">
+        <div class="text-center mb-5 anim-up">
+            <span class="sec-label">Our Process</span>
+            <h2 class="sec-title">Demolition Process &amp; Why Choose Us</h2>
+            <p class="sec-desc mx-auto">From initial consultation to safe demolition — we follow a systematic approach to ensure safety, efficiency, and complete client satisfaction.</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- 1. Initial Site Consultation -->
+            <div class="col-md-4 anim-up">
+                <div class="value-card">
+                    <div class="icon"><i class="bi bi-clipboard-check"></i></div>
+                    <h4>Initial Site Consultation</h4>
+                    <p>We start by discussing your needs and understanding the scope of the project. This helps us tailor our approach for maximum efficiency.</p>
+                </div>
+            </div>
+
+            <!-- 2. Project Assessment -->
+            <div class="col-md-4 anim-up">
+                <div class="value-card">
+                    <div class="icon"><i class="bi bi-search"></i></div>
+                    <h4>Project Assessment</h4>
+                    <p>A detailed inspection of the property is done to identify any potential challenges, as well as the necessary demolition methods and equipment required.</p>
+                </div>
+            </div>
+
+            <!-- 3. Project Planning -->
+            <div class="col-md-4 anim-up">
+                <div class="value-card">
+                    <div class="icon"><i class="bi bi-diagram-3"></i></div>
+                    <h4>Project Planning</h4>
+                    <p>Our team develops a step-by-step demolition plan, ensuring that all aspects of the project are covered, from safety to timing.</p>
+                </div>
+            </div>
+
+            <!-- 4. Permit Acquisition -->
+            <div class="col-md-4 anim-up">
+                <div class="value-card">
+                    <div class="icon"><i class="bi bi-file-earmark-check"></i></div>
+                    <h4>Permit Acquisition</h4>
+                    <p>We handle all the required permits and legal paperwork, ensuring the project complies with local regulations and building codes.</p>
+                </div>
+            </div>
+
+            <!-- 5. Hazardous Material Handling -->
+            <div class="col-md-4 anim-up">
+                <div class="value-card">
+                    <div class="icon"><i class="bi bi-exclamation-triangle"></i></div>
+                    <h4>Hazardous Material Handling</h4>
+                    <p>We assess and identify any hazardous materials (like asbestos or lead) on the site, ensuring they’re safely and legally removed.
+
+</p>
+                </div>
+            </div>
+
+            <!-- 6. Safe & Efficient Demolition -->
+            <div class="col-md-4 anim-up">
+                <div class="value-card">
+                    <div class="icon"><i class="bi bi-hammer"></i></div>
+                    <h4>Safe &amp; Efficient Demolition</h4>
+                    <p>Our expert team executes the demolition using advanced machinery, ensuring the process is completed safely and with minimal disruption.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ============================================
+    TEAM
+    ============================================ -->
+    <section class="team-section">
+        <div class="container">
+            <div class="text-center mb-4 anim-up">
+                <span class="sec-label">Our Team</span>
+                <h2 class="sec-title">Meet the People Behind the Build</h2>
+                <p class="sec-desc mx-auto">Our experienced professionals bring decades of combined expertise to every project.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 anim-up">
+                    <div class="team-card">
+                        <div class="team-card-img">
+                            <img src="https://scontent.fdel3-2.fna.fbcdn.net/v/t39.30808-6/737297591_1623652123100439_4519536168477810958_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1440&ctp=p526x296&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jIekiEExwygQ7kNvwH-UkKV&_nc_oc=Adp_JuyrvM0KscGjVNHewtr8pq2H1v03FjTaHxgT8KsjWlj7y7iBS6USw5kDJW5x6-N1059Z48CT2jhcf5EslClm&_nc_zt=23&_nc_ht=scontent.fdel3-2.fna&_nc_gid=C-VY4hjlT_FyxjrU0KbopQ&_nc_ss=7b289&oh=00_AQDDa69R8qglIF13r369CHRhPnMHewEj0HokhzPaozIsjg&oe=6A6F7A7B" alt="Team member" loading="lazy" />
+                        </div>
+                        <div class="team-card-body">
+                            <h5>Mujeeb Ahmed</h5>
+                            <div class="role">Founder &amp; CEO</div>
+                            <p>30+ years of construction experience. Visionary leader behind Stars &amp; Merit's growth.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 anim-up">
+                    <div class="team-card">
+                        <div class="team-card-img">
+                            <img src="https://scontent.fdel3-2.fna.fbcdn.net/v/t39.30808-6/725611405_1611379890994329_1829604457210484142_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1440&ctp=p526x296&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7HfXXnJceLsQ7kNvwEg6Hy7&_nc_oc=AdrTU86pTr6gy8K4F0P5-xW9LTcI6WfyFX1JaoDJH6r0CvUZDttI_tZIgcYrpr7cG1flb-rkvOFwO24YMwPR3h6p&_nc_zt=23&_nc_ht=scontent.fdel3-2.fna&_nc_gid=F4lL0i5O8Yge3m8FlpWvfw&_nc_ss=7b289&oh=00_AQAsnGLMh4Rtxkm34eWn2dUZz1_0cXnGUDnBBzlbk66yeg&oe=6A6F738D" alt="Team member" loading="lazy" />
+                        </div>
+                        <div class="team-card-body">
+                            <h5>Mujeeb Ahmed</h5>
+                            <div class="role">Head of Architecture</div>
+                            <p>Award-winning architect specializing in sustainable and functional designs.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 anim-up">
+                    <div class="team-card">
+                        <div class="team-card-img">
+                            <img src="https://scontent.fdel91-1.fna.fbcdn.net/v/t39.30808-6/673759934_1552774340188218_3083443249823750460_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1440&ctp=p526x296&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9fZk28mHHwcQ7kNvwHtv4gn&_nc_oc=AdoWwPboaCBTZO9vxP9hr1KzzNMQrtsIuZz1UtGE5zePa2JJgq433AmuS3GZijlv9l0cMtEkbmyI8rFwdzqLZSnH&_nc_zt=23&_nc_ht=scontent.fdel91-1.fna&_nc_gid=46b_C48UzKC-skCxKY8EDQ&_nc_ss=7a289&oh=00_AQA5DeMf_dd0zMspG03xXFTqwt3R_lKpdBS7P75S0itbuw&oe=6A6FEBFE" alt="Team member" loading="lazy" />
+                        </div>
+                        <div class="team-card-body">
+                            <h5>Vikram Singh</h5>
+                            <div class="role">Project Director</div>
+                            <p>Expert in large-scale commercial and industrial projects with a focus on efficiency.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 anim-up">
+                    <div class="team-card">
+                        <div class="team-card-img">
+                            <img src="https://scontent.fdel91-1.fna.fbcdn.net/v/t39.30808-6/599592078_1443298711135782_5038038270509643897_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1440&ctp=p526x296&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=JnqwXO3kLRgQ7kNvwEs5hP3&_nc_oc=AdoivpQq-ANP3pmjaZRTcFMGvyGf_S-ACzhjJOGG_6y7wUg4I4Pl8_Yeu4CBrOZ5ZS6atVdupoqFO7wXNb-IHm-u&_nc_zt=23&_nc_ht=scontent.fdel91-1.fna&_nc_gid=IsqtrXocrH6MJewGM2W_vw&_nc_ss=7a289&oh=00_AQB_KHVrI0dQsNLpYry4qMaQNaWiiD9KD3A36bMqWbf-qQ&oe=6A700E5A" alt="Team member" loading="lazy" />
+                        </div>
+                        <div class="team-card-body">
+                            <h5>Neha Gupta</h5>
+                            <div class="role">Client Relations Manager</div>
+                            <p>Ensuring seamless communication and complete client satisfaction from start to finish.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    STATS (re-usable)
+    ============================================ -->
+    <section class="stats-z" style="background:var(--primary);padding:clamp(30px,5vh,60px) 0;">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-6 col-lg-3 anim-up">
+                    <div class="stat-z-item">
+                        <div class="stat-z-num"><span class="counter" data-target="200">0</span>+</div>
+                        <div class="stat-z-label">Projects Completed</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 anim-up">
+                    <div class="stat-z-item">
+                        <div class="stat-z-num"><span class="counter" data-target="15">0</span>+</div>
+                        <div class="stat-z-label">Years in NCR</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 anim-up">
+                    <div class="stat-z-item">
+                        <div class="stat-z-num"><span class="counter" data-target="5">0</span></div>
+                        <div class="stat-z-label">NCR Cities</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 anim-up">
+                    <div class="stat-z-item">
+                        <div class="stat-z-num"><span class="counter" data-target="98">0</span>%</div>
+                        <div class="stat-z-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    CTA
+    ============================================ -->
+    <section class="cta-z">
+        <div class="cta-z-bg"></div>
+        <div class="container">
+            <div class="cta-z-content anim-up">
+                <span class="sec-label" style="color:var(--accent-light);justify-content:center;">Start Your Project</span>
+                <h2 class="sec-title">Ready to Build Something Great Together?</h2>
+                <p class="sec-desc mx-auto">Whether it's a dream home, a commercial space, or an industrial project — we're here to bring your vision to life.</p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="#" class="btn-z-primary">Get Free Estimate <i class="bi bi-arrow-right"></i></a>
+                    <a href="#" class="btn-z-outline"><i class="bi bi-telephone"></i> Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
+    <footer class="footer-z">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-brand-z" href="#">
+                        <div class="fb-z">S M</div>Stars &amp; Merit
+                    </a>
+                    <p class="footer-desc-z">NCR's most trusted construction company. Building homes, offices, and dreams since 2009 with transparency, quality, and commitment.</p>
+                    <div class="footer-social-z">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6>NCR Cities</h6>
+                    <ul class="footer-links-z">
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Noida</a></li>
+                        <li><a href="#">Greater Noida</a></li>
+                        <li><a href="#">Gurgaon</a></li>
+                        <li><a href="#">Faridabad</a></li>
+                        <li><a href="#">Ghaziabad</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6>Services</h6>
+                    <ul class="footer-links-z">
+                        <li><a href="#">Residential</a></li>
+                        <li><a href="#">Commercial</a></li>
+                        <li><a href="#">Industrial</a></li>
+                        <li><a href="#">Renovation</a></li>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Plan Approval</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6>Company</h6>
+                    <ul class="footer-links-z">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6>Resources</h6>
+                    <ul class="footer-links-z">
+                        <li><a href="#">Cost Calculator</a></li>
+                        <li><a href="#">Floor Plans</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-z">
+                <p>© 2025 Stars &amp; Merit Construction Pvt. Ltd. All rights reserved.</p>
+                <p>Made with <a href="#">❤</a> in NCR</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="btt" id="btt" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+<!-- ===== FLOATING WHATSAPP & CALL BUTTONS ===== -->
+    <div class="float-btn-group">
+        <a href="https://wa.me/91934675591?text=Hi%20Stars%20%26%20Merit%2C%20I%20want%20to%20know%20about%20construction%20services%20in%20NCR." target="_blank" class="float-btn whatsapp" aria-label="Chat on WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+            <span class="tooltip-text">WhatsApp</span>
+        </a>
+        <a href="tel:+9193467559" class="float-btn call bg-danger" aria-label="Call now">
+            <i class="bi bi-telephone-fill"></i>
+            <span class="tooltip-text">Call Us</span>
+        </a>
+    </div>
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+   
+<script src="js/main.js"></script>
+</body>
+
+</html>

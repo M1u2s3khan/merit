@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "no-inline-styles": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "aspect-ratio",
+          "inset",
+          "inset",
+          "scroll-behavior",
+          "backdrop-filter",
+          "backdrop-filter",
+          "backdrop-filter",
+          "scroll-behavior",
+          "backdrop-filter",
+          "backdrop-filter",
+          "backdrop-filter",
+          "backdrop-filter"
+        ]
+      }
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "img[loading]"
+        ]
+      }
+    ],
+    "disown-opener": "off",
+    "meta-viewport": "off",
+    "axe/forms": [
+      "off",
+      {
+        "select-name": "off"
+      }
+    ]
+  }
+}
