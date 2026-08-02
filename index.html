@@ -36,81 +36,88 @@
     <!-- ============================================
     PREMIUM NAVBAR
     ============================================ -->
-    <nav class="navbar navbar-expand-lg navbar-premium fixed-top" id="mainNav">
-        <div class="container">
+   <nav class="navbar navbar-expand-lg navbar-premium fixed-top" id="mainNav">
+    <div class="container">
 
-            <!-- Brand -->
-            <a class="brand-premium" href="#">
-                <img class="bg-danger" width="80" height="auto" style="border-radius: 50%;"  src="https://scontent.fdel3-4.fna.fbcdn.net/v/t39.30808-1/449838146_992726649526326_8837922176229237678_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s200x200&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=td2cpW08HhAQ7kNvwE-j-oR&_nc_oc=AdrlgJRb4XzCC8cI1scxjy3WZ6DBiGg_CTP2iGtlaeBU7Ar3b1X_c3D5nX3mLii-Cdn7tMhgb1tUe_HLfJ3wpkn-&_nc_zt=24&_nc_ht=scontent.fdel3-4.fna&_nc_gid=L-3yLGUMGkoojltxiYrkmQ&_nc_ss=78289&oh=00_AQEAnWp3V6EXfM-7WkNBkLP2jAaDVbJb2QcGg3BFasGS7w&oe=6A7123C4" alt="">
-                <span class="brand-text">
-                    Stars <span class="highlight">&amp;</span> Merit
-                </span>
+        <!-- Brand -->
+        <a class="brand-premium" href="#">
+            <img class="bg-danger" width="80" height="auto" style="border-radius: 50%;" src="https://scontent.fdel3-4.fna.fbcdn.net/v/t39.30808-1/449838146_992726649526326_8837922176229237678_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s200x200&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=td2cpW08HhAQ7kNvwE-j-oR&_nc_oc=AdrlgJRb4XzCC8cI1scxjy3WZ6DBiGg_CTP2iGtlaeBU7Ar3b1X_c3D5nX3mLii-Cdn7tMhgb1tUe_HLfJ3wpkn-&_nc_zt=24&_nc_ht=scontent.fdel3-4.fna&_nc_gid=L-3yLGUMGkoojltxiYrkmQ&_nc_ss=78289&oh=00_AQEAnWp3V6EXfM-7WkNBkLP2jAaDVbJb2QcGg3BFasGS7w&oe=6A7123C4" alt="">
+            <span class="brand-text">
+                Stars <span class="highlight">&amp;</span> Merit
+            </span>
+        </a>
+
+        <!-- ⭐ FIXED HAMBURGER — added Bootstrap data attributes -->
+        <button class="navbar-toggler hamburger-premium" 
+                id="hamburgerBtn" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navMenu" 
+                aria-controls="navMenu" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <!-- Collapsible -->
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+
+                <!-- Home -->
+                <li class="nav-item">
+                    <a class="nav-link nav-link-premium active" href="index.html">
+                        <i class="bi bi-house-fill"></i> Home
+                    </a>
+                </li>
+                <!-- About -->
+                <li class="nav-item">
+                    <a class="nav-link nav-link-premium active" href="about.html">
+                        <i class="bi bi-info-circle"></i> About
+                    </a>
+                </li>
+
+                <!-- Dropdown: Services (hover) -->
+                <li class="nav-item dropdown-premium">
+                    <a class="nav-link nav-link-premium" href="#" id="servicesDropdown" role="button">
+                        <i class="bi bi-grid-3x3-gap-fill"></i> Services
+                        <span class="dropdown-arrow"><i class="bi bi-chevron-down"></i></span>
+                    </a>
+                    <ul class="dropdown-menu-premium" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item-premium" href="#"><i class="bi bi-house-door"></i> Residential</a></li>
+                        <li><a class="dropdown-item-premium" href="#"><i class="bi bi-building"></i> Commercial</a></li>
+                        <li><a class="dropdown-item-premium" href="#"><i class="bi bi-gear-wide-connected"></i> Industrial</a></li>
+                        <li class="dropdown-divider-premium"></li>
+                        <li><a class="dropdown-item-premium" href="#"><i class="bi bi-tools"></i> Renovation</a></li>
+                        <li><a class="dropdown-item-premium" href="#"><i class="bi bi-palette2"></i> Interior Design</a></li>
+                    </ul>
+                </li>
+
+                <!-- Project -->
+                <li class="nav-item">
+                    <a class="nav-link nav-link-premium active" href="project.html">
+                        <i class="bi bi-briefcase"></i> Project
+                    </a>
+                </li>
+
+                <!-- Contact -->
+                <li class="nav-item">
+                    <a class="nav-link nav-link-premium" href="contact.html">
+                        <i class="bi bi-envelope"></i> Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- CTA -->
+            <a href="contact.html" class="btn-cta-nav">
+                <i class="bi bi-arrow-right-circle"></i> Get Free Quote
             </a>
-
-            <!-- Animated Hamburger -->
-            <button class="hamburger-premium" id="hamburgerBtn" type="button" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-
-            <!-- Collapsible -->
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto">
-
-                    <!-- Home -->
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-premium active" href="index.html">
-                            <i class="bi bi-house-fill"></i> Home
-                        </a>
-                    </li>
-                    <!-- About -->
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-premium active" href="about.html">
-                            <i class="bi bi-info-circle"></i> About
-                        </a>
-                    </li>
-
-                    <!-- Dropdown: Services (hover) -->
-                    <li class="nav-item dropdown-premium">
-                        <a class="nav-link nav-link-premium" href="#" id="servicesDropdown" role="button">
-                            <i class="bi bi-grid-3x3-gap-fill"></i> Services
-                            <span class="dropdown-arrow"><i class="bi bi-chevron-down"></i></span>
-                        </a>
-                        <ul class="dropdown-menu-premium" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-house-door"></i> Residential</a></li>
-                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-building"></i> Commercial</a></li>
-                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-gear-wide-connected"></i> Industrial</a></li>
-                            <li class="dropdown-divider-premium"></li>
-                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-tools"></i> Renovation</a></li>
-                            <li><a class="dropdown-item-premium" href="#"><i class="bi bi-palette2"></i> Interior Design</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Project -->
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-premium active" href="project.html">
-                            <i class="bi bi-briefcase"></i> Project
-                        </a>
-                    </li>
-
-                    <!-- Contact -->
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-premium" href="contact.html">
-                            <i class="bi bi-envelope"></i> Contact
-                        </a>
-                    </li>
-
-                </ul>
-
-                <!-- CTA -->
-                <a href="contact.html" class="btn-cta-nav">
-                    <i class="bi bi-arrow-right-circle"></i> Get Free Quote
-                </a>
-            </div>
-
         </div>
-    </nav>
+
+    </div>
+</nav>
 
     <!-- ===== HERO ===== -->
     <section class="hero-z" id="hero">
